@@ -12,15 +12,15 @@
   min-height: 100dvh;
   display: grid;
   grid-template-areas: "cabecera" "heroe" "principal" "consejos" "pie";
-  
-  @include desde($bp-md){
-    grid-template-columns:1fr 20rem;
+
+  @include desde($bp-md) {
+    grid-template-columns: 1fr 20rem;
     grid-template-areas: "cabecera cabecera" "heroe heroe" "principal consejos" "pie pie";
   }
-  
+
   @include desde($bp-lg) {
     max-width: 25rem;
-    margin-inline:auto;
+    margin-inline: auto;
   }
 }
 

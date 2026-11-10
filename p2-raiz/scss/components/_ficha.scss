@@ -19,9 +19,9 @@
   border-radius: $radius-md;
   background: var(--color-superficie);
   grid-template-columns: 1fr;
-  
+
   @container (min-width: 15rem) {
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr;
   }
 }
 
