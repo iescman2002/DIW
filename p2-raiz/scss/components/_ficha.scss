@@ -10,14 +10,19 @@
 
 .hueco-ficha {
   margin-bottom: $space-xl;
+  container-type: inline-size;
 }
 
 .ficha {
-  display: flex;
+  display: grid;
   gap: $space-md;
   overflow: hidden;
   border-radius: $radius-md;
   background: var(--color-superficie);
+  grid-template-columns: 1fr;
+  @container (min-width: 15rem) {
+    grid-template-columns: 1fr 1fr;    
+  }
 }
 
 .ficha__cuerpo {
