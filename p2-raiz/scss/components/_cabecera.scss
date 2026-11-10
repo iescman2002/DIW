@@ -12,6 +12,7 @@
   padding: $space-md;
   color: var(--color-sobre-marca);
   background: var(--color-marca-fuerte);
+  
   @include desde($bp-md) {
     flex-direction: row; // ahora el eje principal es horizontal…
     justify-content: space-between; // …y el espacio que sobra va ENTRE logo y nav
