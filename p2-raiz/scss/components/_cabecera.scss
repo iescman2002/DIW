@@ -5,13 +5,13 @@
 @use "../mixins" as *;
 
 .cabecera {
+  grid-area: cabecera; // Le pongo nombre para la disposición del grid
   display: flex;
   flex-direction: column; // eje principal vertical: logo encima de la nav
   gap: $space-sm;
   padding: $space-md;
   color: var(--color-sobre-marca);
   background: var(--color-marca-fuerte);
-
   @include desde($bp-md) {
     flex-direction: row; // ahora el eje principal es horizontal…
     justify-content: space-between; // …y el espacio que sobra va ENTRE logo y nav

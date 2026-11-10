@@ -8,6 +8,7 @@
 }
 
 .heroe__imagen {
+  grid-area: heroe; // Le pongo nombre para la disposición del grid
   width: 100%;
   max-height: 32rem;
   object-fit: cover; // recorta la foto en vez de deformarla

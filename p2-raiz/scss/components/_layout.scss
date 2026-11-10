@@ -11,9 +11,19 @@
 
 .pagina {
   min-height: 100dvh;
+  display: grid;
+  grid-template-areas: "cabecera" "heroe" "principal" "consejos" "pie";
+  @include desde($bp-md){
+    grid-template-columns:1fr 20rem;
+    grid-template-areas: "cabecera cabecera" "heroe heroe" "principal consejos" "pie pie";
+  }
+  @include desde($bp-lg) {
+  max-width: 100px;
+  }
 }
 
 .principal {
+  grid-area: principal; // Le pongo nombre para la disposición del grid
   padding: clamp(1rem, 0.5rem + 2vw, 2.5rem); // 👀 A4 · relleno fluido (ya resuelto)
 }
 
@@ -22,11 +32,13 @@
 }
 
 .consejos {
+  grid-area: consejos; // Le pongo nombre para la disposición del grid
   padding: clamp(1rem, 0.5rem + 2vw, 2.5rem); // 👀 A4 · relleno fluido (ya resuelto)
   background: var(--color-superficie);
 }
 
 .pie {
+  grid-area: pie; // Le pongo nombre para la disposición del grid
   padding: $space-md;
   text-align: center;
   color: var(--color-sobre-marca);
