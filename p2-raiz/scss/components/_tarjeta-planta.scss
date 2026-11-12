@@ -5,3 +5,37 @@
 //    - los modificadores --oferta (que se note) y --agotada (la imagen en gris);
 //    - especificidad plana: una clase por selector (o .tarjeta-planta--mod .tarjeta-planta__elem). Sin etiquetas ni ids.
 @use "../tokens" as *;
+
+.tarjeta-planta {
+
+}
+
+.tarjeta-planta__imagen {
+
+}
+
+.tarjeta-planta__nombre {
+
+}
+
+.tarjeta-planta__descripcion {
+
+}
+.tarjeta-planta__precio {
+
+}
+.tarjeta-planta__boton {
+
+}
+
+.tarjeta-planta__etiqueta {
+
+}
+
+.tarjeta-planta__etiqueta--oferta {
+
+}
+
+.tarjeta-planta__etiqueta--agotada {
+    
+}
