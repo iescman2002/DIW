@@ -7,35 +7,70 @@
 @use "../tokens" as *;
 
 .tarjeta-planta {
+    border: 1px solid $terracota-300;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
 
+@media (prefers-color-scheme: dark) {
+ .tarjeta-planta {
+    border: 2px solid $green-800;
+ }   
 }
 
 .tarjeta-planta__imagen {
+    border-bottom: 1px solid $terracota-300;
+    width: 100%;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+@media (prefers-color-scheme: dark) {
+ .tarjeta-planta__imagen {
+    border: 2px solid $green-800;
+ }
 }
 
 .tarjeta-planta__nombre {
+    text-align: center;
+    margin: 1em 0;
 
 }
 
 .tarjeta-planta__descripcion {
-
+    text-align: center;
+    margin: 1em;
+    flex-grow: 1;
 }
 .tarjeta-planta__precio {
-
+    font-weight: bold;
+    margin: 0 0 1em;
+    text-align: center;
 }
 .tarjeta-planta__boton {
-
+    align-self: center;
+    margin: 0 0 1em;
 }
 
 .tarjeta-planta__etiqueta {
-
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin: 1em 0 0;
+    padding: 0.2em 0.6em;
 }
 
-.tarjeta-planta__etiqueta--oferta {
-
+.tarjeta-planta--oferta {
+    .tarjeta-planta__etiqueta {
+        background-color: rgb(255, 93, 93);
+    }
 }
 
-.tarjeta-planta__etiqueta--agotada {
-    
+.tarjeta-planta--agotada {
+    filter: grayscale(100%)
 }
