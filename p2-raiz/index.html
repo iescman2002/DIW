@@ -14,7 +14,7 @@
           <svg class="cabecera__marca" viewBox="0 0 32 32" width="32" height="32" role="img">
             <title>RAÍZ</title>
             <path d="M16 30V14" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-            <path d="M16 18C8 17 4 11 5 4c7 0 11 6 11 14zM16 15c7-2 11-7 10-13-6 1-10 6-10 13z"/>
+            <path d="M16 18C8 17 4 11 5 4c7 0 11 6 11 14zM16 15c7-2 11-7 10-13-6 1-10 6-10 13z" />
           </svg>
           <span>RAÍZ</span>
         </a>
@@ -32,8 +32,8 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-              <circle cx="9" cy="19" r="1.6"/>
-              <circle cx="17" cy="19" r="1.6"/>
+              <circle cx="9" cy="19" r="1.6" />
+              <circle cx="17" cy="19" r="1.6" />
             </svg>
             Carrito
           </a>
@@ -44,9 +44,26 @@
         <!-- ✍️ C1 · La foto más pesada de la web, igual para un móvil que para un monitor de 27″.
              Pásala a <picture> con AVIF, WebP y JPG en 480, 960 y 1440 px (las genera docker compose run --rm web npm run imagenes). -->
         <picture>
-          <source type="image/avif" srcset="/img/heroe-480.avif 480w, /img/heroe-960.avif 960w, /img/heroe-1440.avif 1440w" sizes ="100vw">
-          <source type="image/webp" srcset="/img/heroe-480.webp 480w, /img/heroe-960.webp 960w, /img/heroe-1440.webp 1440w" sizes ="100vw">
-          <img class="heroe__imagen" srcset="/img/heroe-480.jpg 480w, /img/heroe-960.jpg 960w, /img/heroe-1440.jpg 1440w" sizes="100vw" src="/img/heroe-1440.jpg" alt="planta en una maceta" fetchpriority="high" width="1440" height="810"/>
+          <source
+            type="image/avif"
+            srcset="/img/heroe-480.avif 480w, /img/heroe-960.avif 960w, /img/heroe-1440.avif 1440w"
+            sizes="100vw"
+          />
+          <source
+            type="image/webp"
+            srcset="/img/heroe-480.webp 480w, /img/heroe-960.webp 960w, /img/heroe-1440.webp 1440w"
+            sizes="100vw"
+          />
+          <img
+            class="heroe__imagen"
+            srcset="/img/heroe-480.jpg 480w, /img/heroe-960.jpg 960w, /img/heroe-1440.jpg 1440w"
+            sizes="100vw"
+            src="/img/heroe-1440.jpg"
+            alt="planta en una maceta"
+            fetchpriority="high"
+            width="1440"
+            height="810"
+          />
         </picture>
         <div class="heroe__texto">
           <h1 class="heroe__titulo">Plantas que llegan vivas a tu casa</h1>
